@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    
+}
+
+:root {
+    --accent-light: #fDD39C;
+    --accent-dark: #1021b4;
+
+}
+
+body {
+margin: 0;
+height: 100vh;
+display: grid;
+grid-template-rows: auto 1fr;
+
+}
+
+header {
+font-size: 6vmin;
+padding: 1vmin;
+background-color: var(--accent-dark);
+color: white;
+text-align: center;
+letter-spacing: 0.5vmin;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4vmin;
+    flex-wrap: wrap;
+}
+
+section button {
+    font-size: 3vmin;
+    font-weight: bold;
+    width: 5vmin;
+    height: 5vmin;
+    margin: 0.5vmin;
+    border: 0.4vmin solid grey;
+    border-radius: 1vmin;
+}
+
+section button:hover {
+    background-color: cyan;
+  }
+
+#msg {
+    
+    font-size: 5vmin;
+    color: var(--accent-dark);
+    text-align: center;
+}
+
+#replay {
+    font-size: 2vmin;
+    font-weight: bold;
+    padding: 2vmin;
+    margin-top: 4vmin;
+    border: .3vmin solid grey;
+    color: grey;
+    border-radius: 2vmin;
+    outline: none;
+    cursor: pointer;
+  }
+#replay:hover {
+    background-color: grey;
+    color: white;
+  }
