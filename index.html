@@ -9,15 +9,48 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <header>Tic your Tacs</header>
+    <header id="msg">See JS for Message</header>
+    <header id="error">Browser Window too small to play game, please resize</header>
     <main>
-        <h1 id="msg">Header1 text</h1>
-        <div id=""> Div text</div>
-        <h1 id="msg1b">Header 1b text</h1>
-        <section>
-            section text
-        </section>
+        <div id="gameBoard"> 
+            <br><br>
+        <input type="text" class="cell" onclick=
+            "myfunc_3(); myfunc();" value="X" readonly>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_4(); myfunc();" value="O" readonly>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_5(); myfunc();" readonly>
+        <br><br>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_6(); myfunc();" readonly>
+              
+        <input type="text" class="cell" onclick=
+            "myfunc_7(); myfunc();" readonly>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_8(); myfunc();" readonly>
+        <br><br>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_9(); myfunc();" readonly>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_10();myfunc();" readonly>
+  
+        <input type="text" class="cell" onclick=
+            "myfunc_11();myfunc();" readonly>
+  
+        <br><br><br>
+        </div>
+       
         <button id="replay">Play Again</button>
+
+        <section is="messageLog">
+            This is where the game talks to the player
+        </section>
     </main>
 </body>
 </html>

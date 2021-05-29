@@ -2,10 +2,13 @@ console.log("Code running");
 
 /*----- constants -----*/
 
+const TOTALSPACES = 9;
 
 
 /*----- app's state (variables) -----*/
 
+let usedSpaces = 0;
+let remainingSpaces = TOTALSPACES - usedSpaces;
 let gameStatus; // null, "win1", "win2"
 let testVarStr = "test!";
 let testVarNum = 10;
@@ -54,7 +57,7 @@ function renderMessage() {
         msgEl.innerText = "Player 2 win"
     } else { 
     //state player's turn
-    msgEl.innerHTML = `Player ${testVar} turn! <br> Good Luck!`
+    msgEl.innerHTML = `Player ${testVarStr} turn! <br> Good Luck!`
     }
 }
 

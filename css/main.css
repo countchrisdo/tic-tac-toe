@@ -1,13 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
-    
 }
 
-:root {
-    --accent-light: #fDD39C;
-    --accent-dark: #1021b4;
 
+:root {
+    --perfect-blue: #1021b4;
 }
 
 body {
@@ -15,16 +13,18 @@ margin: 0;
 height: 100vh;
 display: grid;
 grid-template-rows: auto 1fr;
-
 }
 
 header {
 font-size: 6vmin;
 padding: 1vmin;
-background-color: var(--accent-dark);
+background-color: var(--perfect-blue);
 color: white;
 text-align: center;
 letter-spacing: 0.5vmin;
+font-size: 5vmin;
+color: white;
+text-align: center;
 }
 
 main {
@@ -38,10 +38,21 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 4vmin;
     flex-wrap: wrap;
 }
+
+.cell{
+    background-color:cyan;
+    width: 15vh;
+    height: 15vh;
+    margin: auto;
+    font-size: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
 
 section button {
     font-size: 3vmin;
@@ -57,13 +68,6 @@ section button:hover {
     background-color: cyan;
   }
 
-#msg {
-    
-    font-size: 5vmin;
-    color: var(--accent-dark);
-    text-align: center;
-}
-
 #replay {
     font-size: 2vmin;
     font-weight: bold;
@@ -76,6 +80,24 @@ section button:hover {
     cursor: pointer;
   }
 #replay:hover {
-    background-color: grey;
-    color: white;
+    background-color: rgba(0, 255, 255, 0.199);
+    color: black;
   }
+
+  #error {
+      display: none;
+  }
+
+@media (max-width: 600px) {
+    .cell {
+        background-color: red;
+    }
+    * {
+        background-color: red;
+    }
+    #msg {
+        display: none;
+    }
+    #error {display:block;}
+
+}
