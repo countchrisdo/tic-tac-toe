@@ -3,7 +3,6 @@
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
 }
 
-
 :root {
     --perfect-blue: #1021b4;
 }
@@ -42,7 +41,7 @@ section {
     flex-wrap: wrap;
 }
 
-.cell{
+div input{
     background-color:cyan;
     width: 15vh;
     height: 15vh;
@@ -51,8 +50,6 @@ section {
     cursor: pointer;
     text-align: center;
 }
-
-
 
 section button {
     font-size: 3vmin;
@@ -63,10 +60,6 @@ section button {
     border: 0.4vmin solid grey;
     border-radius: 1vmin;
 }
-
-section button:hover {
-    background-color: cyan;
-  }
 
 #replay {
     font-size: 2vmin;
@@ -89,15 +82,8 @@ section button:hover {
   }
 
 @media (max-width: 600px) {
-    .cell {
-        background-color: red;
-    }
-    * {
-        background-color: red;
-    }
-    #msg {
-        display: none;
-    }
+    .cell {background-color: red;}
+    * { background-color: red;}
+    #msg {display: none;}
     #error {display:block;}
-
 }
