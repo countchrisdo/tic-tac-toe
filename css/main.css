@@ -42,7 +42,7 @@ section {
 }
 
 div input{
-    background-color:cyan;
+    /* background-color:grey; */
     width: 15vh;
     height: 15vh;
     margin: auto;
@@ -80,6 +80,17 @@ section button {
   #error {
       display: none;
   }
+
+.X {
+    background-color:cyan;
+}
+.O {
+    background-color:pink;
+}
+
+.winSqr {
+    background-color: greenyellow;
+}
 
 @media (max-width: 600px) {
     .cell {background-color: red;}
