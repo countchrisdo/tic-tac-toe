@@ -13,7 +13,6 @@
     <header id="error">Browser Window too small to play game, please resize</header>
     <main>
         <div id="gameBoard"> 
-        
         <input type="text"  readonly>
         <input type="text"  readonly>
         <input type="text"  readonly>
@@ -28,14 +27,14 @@
         <input type="text"  readonly>
         <input type="text"  readonly>
         <br><br>
-
         </div>
        
         <button id="replay">Play Again</button>
 
-        <section is="messageLog">
-            This is where the game talks to the player
-        </section>
+        <ul is="messageLog">
+           <li id="playerLog">First PLayer</li>
+           <li id="turnLog">Turns Taken</li>
+        </ul>
     </main>
 </body>
 </html>

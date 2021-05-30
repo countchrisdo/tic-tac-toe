@@ -6,6 +6,8 @@ const WINCONDO = "OOO";
 let gameStatus = "inGame"
 let playerTurn = "";
 let turnsTaken = 0;
+let playerTurnLog = "";
+let turnsTakenLog = "Turns taken so far: 0";
 /*----- cached element references -----*/
 const replayEl = document.getElementById("replay");
 const squares = document.querySelectorAll("div input");
@@ -21,6 +23,7 @@ function init() {
     if(randomIdx == 0){playerTurn = "X"} else {playerTurn = "O"}
 
     turnsTaken = 0;
+    turnsTakenLog = "Turns taken so far: " + turnsTaken;
     gameStatus = "inGame";
     console.log("Variable's Reset");
 
@@ -28,17 +31,16 @@ function init() {
     for (let i = 0; i < squares.length; i++) {
         squares[i].value = "";
     }
-
-    render();
     
-    console.log("Player 1 is: " + playerTurn);
+    render();
 }
 
 function render() {
-
     renderSquares();
     renderMessage();
-
+    playerTurnLog = "Player 1 this game is: " + playerTurn;
+    turnsTakenLog = "Turns taken so far: " + turnsTaken;
+    GameLog();
     //only show replay button at the end of the game
     if (gameStatus == "inGame") {
         replayEl.style.visibility = "hidden"
@@ -95,20 +97,17 @@ function handleSquareClick(evt) {
     getGameStatus();
     
     turnsTaken++;
-    console.log("Player Turn: " + playerTurn);
 
     render();
+    GameLog();
 }
 
 //Checking the state of the game
 function getGameStatus() {
-    console.log("TurnsTaken: " + turnsTaken);
-
     if (turnsTaken == TOTALTURNS) {
         console.log("Game Status after Game Status Check: " + gameStatus);
         return "winT"
     }
-
     //Checking Winner 
     if (turnsTaken >= 3) {
 
@@ -210,9 +209,6 @@ function getGameStatus() {
     } else {
         gameStatus = "inGame";
     }
-
-    console.log("Game Status after Game Status Check: " + gameStatus);
-
 }
 gameStatus = getGameStatus();
 
@@ -221,4 +217,12 @@ if (turnsTaken >= "8") {
     render();
 }
 
-console.log("-----------");
+//Game Log
+function GameLog(){
+    playerLog=document.getElementById("playerLog");
+    playerLog.innerText = (playerTurnLog)
+    turnLog = document.getElementById("turnLog")
+    turnLog.innerText = (turnsTakenLog)
+
+}
+GameLog();

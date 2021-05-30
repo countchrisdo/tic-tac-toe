@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    
 }
 
 :root {
-    --perfect-blue: #1021b4;
+    --perfect-blue: #b1d4ec;
 }
 
 body {
@@ -17,13 +18,13 @@ grid-template-rows: auto 1fr;
 header {
 font-size: 6vmin;
 padding: 1vmin;
-background-color: var(--perfect-blue);
+background-image: repeating-linear-gradient(rgba(0, 0, 255, 0.452), rgba(255, 192, 203, 0.486), rgba(255, 255, 255, 0.39)),
+  url("https://i.redd.it/pujyuh2w3gs51.png");
 color: white;
+text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 text-align: center;
 letter-spacing: 0.5vmin;
 font-size: 5vmin;
-color: white;
-text-align: center;
 }
 
 main {
@@ -31,18 +32,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 4vmin;
-    flex-wrap: wrap;
+ul {
+    margin: 1vmin;
 }
+
+ul li:hover {
+    background: #ddd;
+  }
 
 div input{
-    /* background-color:grey; */
     width: 15vh;
     height: 15vh;
     margin: auto;
@@ -59,6 +60,7 @@ section button {
     margin: 0.5vmin;
     border: 0.4vmin solid grey;
     border-radius: 1vmin;
+    
 }
 
 #replay {
@@ -86,10 +88,6 @@ section button {
 }
 .O {
     background-color:pink;
-}
-
-.winSqr {
-    background-color: greenyellow;
 }
 
 @media (max-width: 600px) {
