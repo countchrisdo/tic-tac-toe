@@ -7,7 +7,7 @@ This is an HTML / Javascript / CSS 2-Player Tic Tac Toe game.
   - Turn Counter
   - Randomized Starting Player
 
-![Alt Text](https://i.imgur.com/NQUbGZd.mp4)
+![](https://i.imgur.com/NQUbGZd.mp4)
 
 ## Instructions
 
