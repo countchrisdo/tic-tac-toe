@@ -6,8 +6,6 @@ This is an HTML / Javascript / CSS 2-Player Tic Tac Toe game.
 
   - Turn Counter
   - Randomized Starting Player
-  - A 2 player game has two human players.
-  - For the wargames mode just type 'wargames' when prompted for the number of players, the computer will play 100 gmaes against each other, displaying the total tally of wins vs. draws at the end.
 
 ## Instructions
 
