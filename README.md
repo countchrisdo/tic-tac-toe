@@ -1,12 +1,12 @@
-# Tic Tac Toe
+# Connect Four
 
 ## Overview
 
-This is an HTML / Javascript / CSS 2-Player Tic Tac Toe game.
+This is an HTML / Javascript / CSS 2-Player Connect Four game.
 
-  - Turn Counter
-  - Randomized Starting Player
+  - Feature list
+  - Feature List
 
 ## Instructions
 
-To play, decide who will be player X and player O. Then launch the HTML file in your favorite browser and the game will decide the first player. Take turns clicking your choice of square and attempt to get 3 of your peices in a row.
+To play
